@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muaaviya Blog | Static Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #0073ff, #00bfff);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 3rem auto;
+    }
+
+    /* Blog Grid */
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.4rem;
+      text-align: left;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #0073ff;
+      color: white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .card h3 {
+      margin-bottom: 0.6rem;
+      color: #111;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1.2rem;
+    }
+    .card a {
+      display: inline-block;
+      padding: 0.55rem 1.2rem;
+      background: #0073ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+    .card a:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #00c8ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Muaaviya's Blog</h1>
+    <p>Web Development • CSS • Performance</p>
+  </header>
+
+  <!-- Blog Posts -->
+  <div class="container">
+    <div class="posts">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Responsive Design">
+        <div class="card-content">
+          <span class="tag">Design</span>
+          <h3>Why Responsive Design Matters</h3>
+          <p>Responsive design improves user experience and SEO, making your website future-proof.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=60" alt="CSS Tricks">
+        <div class="card-content">
+          <span class="tag">CSS</span>
+          <h3>Top 5 CSS Tricks for Beginners</h3>
+          <p>Level up your web design game with these simple CSS hacks every developer should know.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60" alt="Website Speed">
+        <div class="card-content">
+          <span class="tag">Performance</span>
+          <h3>Boost Your Website Speed</h3>
+          <p>Tips and tricks to reduce load time and deliver a fast, seamless web experience.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Muaaviya Tech</p>
+    <p><a href="https://www.fiverr.com/muaaviyasirkhot/create-responsive-html-css-website-or-landing-page" target="_blank">Hire Me on Fiverr</a></p>
+  </footer>
+
+</body>
+</html>
